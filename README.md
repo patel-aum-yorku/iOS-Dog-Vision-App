@@ -54,7 +54,7 @@ DogBreedClassifier/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/dog-breed-classifier-ios.git
+   git clone https://github.com/patel-aum-yorku/iOS-Dog-Vision-App.git
    cd dog-breed-classifier-ios
    ```
 
