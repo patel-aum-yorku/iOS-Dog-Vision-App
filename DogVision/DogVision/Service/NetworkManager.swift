@@ -6,7 +6,7 @@ class NetworkManager: ObservableObject {
     static let shared = NetworkManager()
     
     // Your FastAPI server URL - Update this with your actual server URL
-    private let baseURL = "http://localhost:8000"  // Change to your server URL
+    private let baseURL = "http://192.168.2.57:8000"  // Change to your server URL
     
     private init() {}
     
@@ -44,7 +44,7 @@ class NetworkManager: ObservableObject {
         let prompt = "Tell me about the \(breedName.replacingOccurrences(of: "_", with: " ")) dog breed. Include characteristics, temperament, and interesting facts in 2-3 paragraphs."
         
         // Replace with your Gemini API key
-        let apiKey = "YOUR_GEMINI_API_KEY"
+        let apiKey = "api key here i am not shring mine use your own"
         guard let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=\(apiKey)") else {
             throw NetworkError.invalidURL
         }
